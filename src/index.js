@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+
 export function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -14,12 +15,35 @@ export function welcome() {
     return name;
 }
 
-export function question(text){
+export function question(text) {
     console.log(`Question: ${text}!`);
 }
 
-export function get_answer(){
+export function get_answer() {
     return readlineSync.question('Your answer: ');
 }
 
+export function nod(x, y) {
+    let min;
+    if (x < y) {
+        min = x;
+    } else {
+        min = y;
+    }
+
+    for (let i = min; i > 0; i-=1) {
+        if (x % i == 0 && y % i == 0) {
+            return i;
+        }
+    }
+}
+
+export function correct() {
+    console.log("Correct!");
+}
+
+export function error(answer, result, name) {
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`)
+    console.log(`Let's try again, ${name}!`)
+}
 export const MAX_ROUNDS = 3;
