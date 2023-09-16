@@ -27,7 +27,7 @@ function main() {
             if (answer == "yes") {
                 console.log("Correct!")
             } else {
-                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.)`)
+                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.`)
                 console.log(`Let's try again, ${name}!`)
                 return
             }
@@ -35,7 +35,7 @@ function main() {
             if (answer == "no") {
                 console.log("Correct!")
             } else {
-                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.)`)
+                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`)
                 console.log(`Let's try again, ${name}!`)
                 return
             }
