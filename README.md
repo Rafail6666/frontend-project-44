@@ -3,3 +3,5 @@
 
 
 [Игра: "Проверка на чётность"](https://asciinema.org/a/KlBU18upabA0rYwSfRXCGtQSq)
+
+[Игра: "Калькулятор"](https://asciinema.org/a/zlJUWXrLWRHwWMt58pSVslpgx)

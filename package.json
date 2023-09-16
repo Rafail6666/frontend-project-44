@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Rafail6666/frontend-project-44#readme",
   "type": "module",
   "bin": {
+    "brain-calc": "bin/brain-calc.js",
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js"
   },

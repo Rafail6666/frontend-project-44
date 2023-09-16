@@ -2,26 +2,20 @@
 
 import readlineSync from 'readline-sync';
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
+import {welcome, getRandomInt, question, get_answer, MAX_ROUNDS} from '../src/index.js'
 
 function main() {
-    console.log('Welcome to the Brain Games!')
-
-    const name = readlineSync.question('May I have your name? ');
-
-    console.log(`Hello, ${name}!`);
+    const name = welcome()
 
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < MAX_ROUNDS; i++) {
 
         const number = getRandomInt(10000);
 
-        console.log(`Question: ${number}!`)
+        question(number)
 
-        const answer = readlineSync.question('Your answer: ');
+        const answer = get_answer();
 
         if (number % 2 == 0) {
             if (answer == "yes") {
