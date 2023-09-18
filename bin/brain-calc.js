@@ -21,7 +21,7 @@ function main() {
 
         const operationStr = operations[operationInt]
 
-        question(`${number1} ${operationStr} ${number2}`);
+        question(`${number1} ${operationStr} ${number2}!`);
 
         const answer = get_answer();
 

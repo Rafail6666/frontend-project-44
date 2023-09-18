@@ -15,7 +15,7 @@ function main() {
 
         const number2 = getRandomInt(100);
 
-        question(`${number1} ${number2}`);
+        question(`${number1} ${number2}!`);
 
         const answer = get_answer();
 

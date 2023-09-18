@@ -16,7 +16,7 @@ export function welcome() {
 }
 
 export function question(text) {
-    console.log(`Question: ${text}!`);
+    console.log(`Question: ${text}`);
 }
 
 export function get_answer() {

@@ -13,7 +13,7 @@ function main() {
 
         const number = getRandomInt(10000);
 
-        question(number)
+        question(`${number}!`)
 
         const answer = get_answer();
 
