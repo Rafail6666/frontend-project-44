@@ -36,7 +36,7 @@ function main() {
       result = (number1 * number2);
     }
 
-    if (answer !== undefined && toString(answer) === toString(result)) {
+    if (typeof answer === 'string' && toString(answer) === toString(result)) {
       correct();
     } else {
       error(answer, result, name);
