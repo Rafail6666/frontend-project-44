@@ -17,13 +17,13 @@ function main() {
     const answer = getAnswer();
 
     if (number % 2 === 0) {
-      if (answer !== undefined && answer === 'yes') {
+      if (answer === 'yes') {
         correct();
       } else {
         error(answer, 'yes', name);
         return;
       }
-    } else if (answer !== undefined && answer === 'no') {
+    } else if (answer === 'no') {
       correct();
     } else {
       error(answer, 'no', name);
