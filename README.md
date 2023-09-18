@@ -9,3 +9,5 @@
 [Игра "НОД"](https://asciinema.org/a/fo39FSFzf2ffXseT8zOhLVILk)
 
 [Игра "Арифметическая прогрессия"](https://asciinema.org/a/11FzGhfYkdYjSbOzVq41HliSF)
+
+[Игра "Простое ли число?"](https://asciinema.org/a/PySTMvjnuOgzr3PIu8NBr0ayI)
