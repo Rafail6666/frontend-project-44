@@ -38,9 +38,14 @@ function main() {
 
     const answer = getAnswer();
 
-    if (toString(answer) === toString(result)) {
-      correct();
-    } else {
+    try {
+      if (toString(answer) === toString(result)) {
+        correct();
+      } else {
+        error(answer, result, name);
+        return;
+      }
+    } catch {
       error(answer, result, name);
       return;
     }

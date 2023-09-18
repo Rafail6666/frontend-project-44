@@ -14,7 +14,7 @@ function main() {
 
     question(`${number}!`);
 
-    const answer = toString(getAnswer());
+    const answer = getAnswer();
 
     if (simple(number)) {
       if (answer === 'yes') {
