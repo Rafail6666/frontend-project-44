@@ -27,13 +27,13 @@ function main() {
 
             if (i == x) {
 
-                str = `${str} ..`
+                str = `${str}.. `
 
                 result = number1;
 
             } else {
 
-                str = `${str} ${number1}`
+                str = `${str}${number1} `
 
             }
 
