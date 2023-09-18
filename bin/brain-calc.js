@@ -37,7 +37,7 @@ function main() {
     }
 
     try {
-      if (toString(result) === toString(answer)) {
+      if (result === parseInt(answer, 10)) {
         correct();
       } else {
         error(answer, result, name);
