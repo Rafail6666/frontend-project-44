@@ -39,7 +39,7 @@ function main() {
     const answer = getAnswer();
 
     try {
-      if (toString(answer) === toString(result)) {
+      if (parseInt(answer, 10) === result) {
         correct();
       } else {
         error(answer, result, name);
