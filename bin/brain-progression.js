@@ -7,7 +7,7 @@ import { welcome, getRandomInt, question, get_answer, MAX_ROUNDS, nod, correct, 
 function main() {
     const name = welcome();
 
-    console.log('Find the greatest common divisor of given numbers.');
+    console.log('What number is missing in the progression?');
 
     for (let i = 0; i < MAX_ROUNDS; i++) {
 
