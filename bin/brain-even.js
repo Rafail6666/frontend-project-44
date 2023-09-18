@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 
-import {welcome, getRandomInt, question, get_answer, MAX_ROUNDS} from '../src/index.js'
+import {welcome, getRandomInt, question, get_answer, MAX_ROUNDS, correct} from '../src/index.js'
 
 function main() {
     const name = welcome()
@@ -19,18 +19,16 @@ function main() {
 
         if (number % 2 == 0) {
             if (answer == "yes") {
-                console.log("Correct!")
+                correct();
             } else {
-                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.`)
-                console.log(`Let's try again, ${name}!`)
+                error(answer, "yes", name);
                 return
             }
         } else {
             if (answer == "no") {
-                console.log("Correct!")
+                correct();
             } else {
-                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`)
-                console.log(`Let's try again, ${name}!`)
+                error(answer, "no", name);
                 return
             }
         }

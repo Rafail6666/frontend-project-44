@@ -7,3 +7,5 @@
 [Игра: "Калькулятор"](https://asciinema.org/a/zlJUWXrLWRHwWMt58pSVslpgx)
 
 [Игра "НОД"](https://asciinema.org/a/fo39FSFzf2ffXseT8zOhLVILk)
+
+[Игра "Арифметическая прогрессия"](https://asciinema.org/a/11FzGhfYkdYjSbOzVq41HliSF)
