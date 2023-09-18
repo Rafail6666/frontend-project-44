@@ -1,59 +1,58 @@
 import readlineSync from 'readline-sync';
 
-
 export function getRandomInt(max, min = 0) {
-    return Math.floor(Math.random() * (max - min)) + min;
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 export function welcome() {
-    console.log('Welcome to the Brain Games!');
+  console.log('Welcome to the Brain Games!');
 
-    const name = readlineSync.question('May I have your name? ');
+  const name = readlineSync.question('May I have your name? ');
 
-    console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!`);
 
-    return name;
+  return name;
 }
 
 export function question(text) {
-    console.log(`Question: ${text}`);
+  console.log(`Question: ${text}`);
 }
 
-export function get_answer() {
-    return readlineSync.question('Your answer: ');
+export function getAnswer() {
+  return readlineSync.question('Your answer: ');
 }
 
 export function nod(x, y) {
-    let min;
-    if (x < y) {
-        min = x;
-    } else {
-        min = y;
-    }
+  let min;
+  if (x < y) {
+    min = x;
+  } else {
+    min = y;
+  }
 
-    for (let i = min; i > 0; i-=1) {
-        if (x % i == 0 && y % i == 0) {
-            return i;
-        }
+  for (let i = min; i > 0; i -= 1) {
+    if (x % i === 0 && y % i === 0) {
+      return i;
     }
+  }
+  return 1;
 }
 
-export function simple(number){
-    
-    for(let i = 2; i < number/2; i++){
-        if(number % i == 0){
-            return false;
-        }
+export function simple(number) {
+  for (let i = 2; i < number / 2; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
-    return true;
+  }
+  return true;
 }
 
 export function correct() {
-    console.log("Correct!");
+  console.log('Correct!');
 }
 
 export function error(answer, result, name) {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`)
-    console.log(`Let's try again, ${name}!`)
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
+  console.log(`Let's try again, ${name}!`);
 }
 export const MAX_ROUNDS = 3;
