@@ -14,16 +14,16 @@ function main() {
 
     question(`${number}!`);
 
-    const answer = toString(getAnswer());
+    const answer = getAnswer();
 
     if (number % 2 === 0) {
-      if (answer === 'yes') {
+      if (answer !== undefined && answer === 'yes') {
         correct();
       } else {
         error(answer, 'yes', name);
         return;
       }
-    } else if (answer === 'no') {
+    } else if (answer !== undefined && answer === 'no') {
       correct();
     } else {
       error(answer, 'no', name);
