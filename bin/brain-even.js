@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 
-import {welcome, getRandomInt, question, get_answer, MAX_ROUNDS, correct} from '../src/index.js'
+import {welcome, getRandomInt, question, get_answer, MAX_ROUNDS, correct, error} from '../src/index.js'
 
 function main() {
     const name = welcome()
