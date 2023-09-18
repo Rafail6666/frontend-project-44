@@ -20,7 +20,7 @@ function main() {
 
     const result = nod(number1, number2);
 
-    if (answer === result) {
+    if (toString(answer) === toString(result)) {
       correct();
     } else {
       error(answer, result, name);

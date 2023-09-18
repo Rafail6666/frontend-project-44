@@ -36,7 +36,7 @@ function main() {
       result = (number1 * number2);
     }
 
-    if (answer === result) {
+    if (toString(answer) === toString(result)) {
       correct();
     } else {
       error(answer, result, name);
