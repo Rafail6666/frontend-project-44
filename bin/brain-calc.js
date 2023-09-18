@@ -36,9 +36,14 @@ function main() {
       result = (number1 * number2);
     }
 
-    if (typeof answer === 'string' && toString(answer) === toString(result)) {
-      correct();
-    } else {
+    try {
+      if (toString(result) === toString(answer)) {
+        correct();
+      } else {
+        error(answer, result, name);
+        return;
+      }
+    } catch {
       error(answer, result, name);
       return;
     }
